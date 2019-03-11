@@ -1,0 +1,3 @@
+print('Enter length in foot to converte in cm')
+foots=float(input())
+print('Length in cm is ', foots*30.48)
