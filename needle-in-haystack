@@ -1,0 +1,13 @@
+ndl = input()      #needle
+hk = input()       #haystack
+b = len(hk)
+a = len(ndl)
+n = 0
+k = a
+cntr = 0
+for each in range(0, (b-a)+1):
+   if (hk[n:k] == ndl):
+      cntr += 1
+   n += 1
+   k += 1
+print(cntr)         #number of needle in haystack
