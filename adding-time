@@ -1,0 +1,17 @@
+time = input()            #ввод времени задуман в формате 12:23
+D = int(input())          #ввод длительности прибавляемого времени в минутах 125
+hs = int(time[0:2])
+ms = int(time[3:5])
+ahs = D//60
+ams = D-ahs*60
+
+rms = (ms + ams) % 60
+if (ms + ams) > 60:
+   ahs+=1
+rhs = (hs + ahs)%24
+if rhs<10:
+   if rhs!='00':
+      rhs=str(0)+str(rhs)
+if rms<10:
+   rms=str(0)+str(rms)
+print(str(rhs)+':'+str(rms))
